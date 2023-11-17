@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>YTTERBIUM HIGH</title>
+    <link rel="stylesheet" href="Ytterbium High.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--CSS code for the background-->
+    <style>
+      body {
+        background-color: rgb(25, 47, 66);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+
+    <div class="content">
+      <h1>WELCOME TO YTTERBIUM HIGH'S DATABASE</h1>
+      <p>DISCIPLINE,PERFORMANCE AND SERVICE.</p>
+      <div>
+        <form action="/feespayment" method="post">
+          <button type="submit"><span></span>FEES PAYMENT</button>
+        </form>
+        <button type="button" onclick="redirectToPageParents()">
+          <span></span>PARENTS
+        </button>
+        <button type="button" onclick="redirectToPageTeachers()">
+          <span></span>TEACHERS
+        </button>
+        <button type="button" onclick="redirectToPageRegistration()">
+          <span></span>REGISTRATION
+        </button>
+        <button type="button" onclick="redirectToPageStudents()">
+          <span></span>STUDENTS
+        </button>
+        <button type="button" onclick="redirectToPageSupport()">
+          <span></span>SUPPORT STAFF
+        </button>
+      </div>
+    </div>
+
+    <!--Footer content-->
+    <footer>
+      <div class="footer-content">
+        <h3>YTTERBIUM HIGH</h3>
+        <p>DISCIPLINE,PERFORMANCE AND SERVICE</p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Created by McCullen corp</p>
+      </div>
+    </footer>
+
+    <!--JAVASCRIPT CODE FOR THE BUTTONS--CONNECTING THE VARIOUS FORMS-->
+    <script>
+      function redirectToPageFees() {
+        window.location.href = "Fees payment.html";
+      }
+
+      function redirectToPageParents() {
+        window.location.href = "Parents.html";
+      }
+
+      function redirectToPageTeachers() {
+        window.location.href = "Teachers.html";
+      }
+
+      function redirectToPageRegistration() {
+        window.location.href = "Registration.html";
+      }
+
+      function redirectToPageStudents() {
+        window.location.href = "Students.html";
+      }
+
+      function redirectToPageSupport() {
+        window.location.href = "Support staff.html";
+      }
+    </script>
+  </body>
+</html>

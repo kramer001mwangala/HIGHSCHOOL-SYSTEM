@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(27, 3, 114);
+}
+    
+    /*CONTAINER'S STYLING*/
+
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: rgb(11, 67, 119);
+    box-shadow: 0 5px 10px rgb(10, 10, 10);
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(36, 33, 33);
+}
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px; 
+    background-color: rgb(44, 52, 59);
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-width: 490px;
+    min-height: 200px;
+    background-color: rgb(11, 67, 119);    
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgba(11, 180, 161, 0.541);
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form  .fields .input-field{
+    display: flex;
+    width: calc(100% / 3-15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(11, 180, 161, 0.541);
+}
+.input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    border-radius: 6px;
+    padding: 0 15px;
+    border: 1px solid #aaa;
+    height: 42px;
+    margin: 8px 0;
+}   
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgb(26, 23, 23);
+}
+.input-field input[type="date"]{
+    color: #cabdbd;
+}.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+    /*BUTTON DESIGN*/
+
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: turquoise;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 60px;
+}
+form button:hover{
+    background-color: #02034bfa;
+}
+
