@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <header>SUPPORT STAFF FORM</header>
-            <form action="#">
+            <form action="/supportStaff" method="post">
                 <div class="form first">
                     <div class="details personal">
                         <span class="title">INPUT DETAILS</span>
@@ -18,15 +18,15 @@
                         <div class="fields">
                             <div class="input-field">
                                 <label>ID NUMBER</label>
-                                <input type="number" placeholder="Enter the ID Number" required>
+                                <input type="number" placeholder="Enter the ID Number" name="ID_NUMBER" required>
                             </div>
                             <div class="input-field">
                                 <label>EMPLOYEE ID</label>
-                                <input type="text" placeholder="Enter the Employee ID" required>
+                                <input type="text" placeholder="Enter the Employee ID" name="EMPLOYEE_ID" required>
                             </div>
                             <div class="input-field">
                                 <label>EMPLOYEE NAME</label>
-                                <input type="text" placeholder="Enter your name" required>
+                                <input type="text" placeholder="Enter your name" name="Employee_Name" required>
                             </div>
                             <div class="input-field">
                                 <label>GENDER</label>
@@ -34,14 +34,14 @@
                             </div>
                             <div class="input-field">
                                 <label>OCCUPATION</label>
-                                <input type="text" placeholder="State your occupation" required>
+                                <input type="text" placeholder="State your occupation" name="occupation" required>
                             </div>
                               
                         </div>
     
                         
                     </div>
-                    <button class="add-record">
+                    <button class="add-record" type="submit">
                         <span class="btnText">ADD RECORD</span>
                         <i class="uil  uil-navigator"></i>
                     </button>

@@ -1,66 +1,67 @@
-<DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <link rel="stylesheet" href="Form style.css">
-        <title>STUDENTS</title>
-    </head>
-    <body>
-        <div class="container">
-            <header>STUDENTS' FORM</header>
-            <form action="#">
-                <div class="form first">
-                    <div class="details personal">
-                        <span class="title">INPUT DETAILS</span>
-    
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>STUDENT ID</label>
-                                <input type="number" placeholder="Enter the STUDENT ID" required>
-                            </div>
-                            <div class="input-field">
-                                <label>STUDENT'S NAME</label>
-                                <input type="text" placeholder="Enter the student's name" required>
-                            </div>
-                            <div class="input-field">
-                                <label>GENDER</label>
-                                <input type="text" placeholder="MALE OR FEMALE" required>
-                            </div>
-                            <div class="input-field">
-                                <label>DATE OF BIRTH</label>
-                                <input type="date" placeholder="Date of registration" required>
-                            </div>
-                            <div class="input-field">
-                                <label>FORM</label>
-                                <input type="text" placeholder="e.g FORM 3" required>
-                            </div>
-                            <div class="input-field">
-                                <label>DORMITORY</label>
-                                <input type="text" placeholder="DORM assigned" required>
-                            </div>
-                            <div class="input-field">
-                                <label>PHONE NUMBER</label>
-                                <input type="number" placeholder="Enter phone number" required>
-                            </div>
-                            <div class="input-field">
-                                <label>SUBJECTS CHOSEN</label>
-                                <input type="text" placeholder="State subjects taken" required>
-                            </div>
-                            
-                            
-                        </div>
-                        
-                    </div>
-                    <button class="add-record">
-                        <span class="btnText">ADD RECORD</span>
-                        <i class="uil  uil-navigator"></i>
-                    </button>
-                </div>
-            </form>
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="Form style.css">
+  <title>STUDENTS</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>STUDENTS' FORM</header>
+    <form action="/students" method="post">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title">INPUT DETAILS</span>
+
+          <div class="fields">
+            <div class="input-field">
+              <label>STUDENT ID</label>
+              <input type="number" placeholder="Enter the STUDENT ID" name="STUDENT_ID" required>
+            </div>
+            <div class="input-field">
+              <label>STUDENT'S NAME</label>
+              <input type="text" placeholder="Enter the student's name" name="STUDENT_NAME" required>
+            </div>
+            <div class="input-field">
+              <label>GENDER</label>
+              <input type="text" placeholder="MALE OR FEMALE" name="gender" required>
+            </div>
+            <div class="input-field">
+              <label>DATE OF BIRTH</label>
+              <input type="date" placeholder="Date of registration" name="REGISTRATION_DATE" required>
+            </div>
+            <div class="input-field">
+              <label>FORM</label>
+              <input type="text" placeholder="e.g FORM 3" name="CLASS" required>
+            </div>
+            <div class="input-field">
+              <label>DORMITORY</label>
+              <input type="text" placeholder="DORM assigned" name="DORM" required>
+            </div>
+            <div class="input-field">
+              <label>PHONE NUMBER</label>
+              <input type="number" placeholder="Enter phone number" name="PHONE" required>
+            </div>
+            <div class="input-field">
+              <label>SUBJECTS CHOSEN</label>
+              <input type="text" placeholder="State subjects taken" name="SUBJECTS" required>
+            </div>
+          </div>
+
         </div>
-        
-    </body>
-    </html>
+        <button class="add-record">
+          <span class="btnText">ADD RECORD</span>
+          <i class="uil uil-navigator"></i>
+        </button>
+      </div>
+    </form>
+
+  </div>
+
+</body>
+
+</html>

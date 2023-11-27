@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <header>REGISTRATION FORM</header>
-            <form action="#">
+            <form action="/registration" method="post">
                 <div class="form first">
                     <div class="details personal">
                         <span class="title">INPUT DETAILS</span>
@@ -18,19 +18,19 @@
                         <div class="fields">
                             <div class="input-field">
                                 <label>STUDENT ID</label>
-                                <input type="number" placeholder="Enter your STUDENT ID" required>
+                                <input type="number" placeholder="Enter your STUDENT ID" name="STUDENT_ID" required>
                             </div>
                             <div class="input-field">
                                 <label>DATE OF REGISTRATION</label>
-                                <input type="date" placeholder="Date of registration" required>
+                                <input type="date" placeholder="Date of registration" name="REGISTRATION_DATE" required>
                             </div>
                             <div class="input-field">
                                 <label>STUDENT'S NAME</label>
-                                <input type="text" placeholder="Enter the student's name" required>
+                                <input type="text" placeholder="Enter the student's name" name="STUDENT_NAME" required>
                             </div>
                             <div class="input-field">
                                 <label>PARENT'S NAME</label>
-                                <input type="text" placeholder="Enter parent's name" required>
+                                <input type="text" placeholder="Enter parent's name" name="PARENTS_NAME" required>
                             </div>
                         </div>
                         

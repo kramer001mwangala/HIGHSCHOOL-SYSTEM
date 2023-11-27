@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>PARENT'S FORM</header>
-        <form action="#">
+        <form action="/parents" method="post">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">INPUT DETAILS</span>
@@ -18,25 +18,25 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>ID NUMBER</label>
-                            <input type="number" placeholder="Enter your ID number" required>
+                            <input type="number" placeholder="Enter your ID number" name="ID_NUMBER" required>
                         </div>
                         <div class="input-field">
                             <label>NAME</label>
-                            <input type="text" placeholder="Enter your name" required>
+                            <input type="text" placeholder="Enter your name" name="NAME" required>
                         </div>
                         <div class="input-field">
                             <label>PHONE NUMBER</label>
-                            <input type="number" placeholder="Enter your phone number" required>
+                            <input type="number" placeholder="Enter your phone number" name="PHONE_NUMBER" required>
                         </div>
                         <div class="input-field">
                             <label>E-MAIL</label>
-                            <input type="email" placeholder="Enter your E-Mail address" required>
+                            <input type="email" placeholder="Enter your E-Mail address" name="Email" required>
                         </div>
                     </div>
 
                     
                 </div>
-                <button class="add-record">
+                <button class="add-record" type="submit">
                     <span class="btnText">ADD RECORD</span>
                     <i class="uil  uil-navigator"></i>
                 </button>
